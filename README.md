@@ -1,6 +1,7 @@
 # rpc-ex-pro
-    springboot-dubbo
+    这是一个dubbo项目
     
+    springboot-dubbo
     springboot dubbo 示例项目
     dubbo官方文档：http://dubbo.apache.org/zh-cn/index.html
     推荐使用注册中心：zookeeper
@@ -8,11 +9,13 @@
     
     
 #Zookeeper起飞~
+
 zookeeper的安装就不一一赘述了，最主要就是要添加一个zoo.cfg配置文件，具体安装可参见官方文档或某歌
 ![启动zk的server端](images/zookeeper-server-start.jpg)
 
 
 #项目启动
+
 1.首先启动服务提供方注册到zookeeper
 ![提供方](images/producer-start.jpg)
 
@@ -34,6 +37,8 @@ zookeeper的安装就不一一赘述了，最主要就是要添加一个zoo.cfg�
 
 3.进入项目根目录打包，而不是dubbo-admin-server下打包，因为需要UI界面， mvn clean install -DskipTests=true，耗时有点长
 ![打包构建](images/dubbo-admin-server-打包.jpg)
+
+
 4.运行打包后的dubbo-admin.jar  java -jar dubbo-admin-server/target/dubbo-admin.jar
 
 
