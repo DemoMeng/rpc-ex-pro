@@ -4,12 +4,9 @@ server:
 dubbo:
   application:
     name:  rpc-consumer-1
+  #连接注册中心配置
   registry:
     address: zookeeper://localhost:2181
-  protocol:
-    check: false
-    name: dubbo
-    port: 24040
 
 rpc:
   version: 1.0
