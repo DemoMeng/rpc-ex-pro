@@ -22,6 +22,8 @@ zookeeper的安装就不一一赘述了，最主要就是要添加一个zoo.cfg�
 2.服务消费方启动
 ![消费方](images/consumer-start.jpg)
 
+3.rpc-api是服务消费方提供给外部调用的接口，如果调用者需要需要调用则需要引入该api依赖，一般需要把该api放到私服中
+
 
 
     
